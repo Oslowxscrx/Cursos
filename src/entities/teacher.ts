@@ -1,6 +1,8 @@
 import { Person } from "./person";
 
-interface Teacher extends Person{
+export interface Teachers extends Person{
     title: string;
     asignature : string;
+    carrer : string;
+
 }

@@ -35,8 +35,7 @@
                  <input type="text" name="address" id="addressStudent" class="form-control" placeholder="direccion de domicillio" aria-describedby="helpId">
                  <label for="registrationCodeStudent" class="form-label">Numero de Matricula</label>
                  <input type="text" name="registration" id="registrationCodeStudent" class="form-control" placeholder="numero de matricula" aria-describedby="helpId">
-                 <label for="carrerStudent" class="form-label">Carrera</label>
-                 <input type="text" name="carrer" id="carrerStudent" class="form-control" placeholder="nombre de la carrera" aria-describedby="helpId">
+                 
                  <label for="levelStudent" class="form-label">Nivel</label>
                  <input type="text" name="level" id="levelStudent" class="form-control" placeholder="nivel en el que esta" aria-describedby="helpId">
 
@@ -57,22 +56,60 @@
                  <label for="nameTeacher" class="form-label">Nombre</label>
                  <input type="text" name="name" id="nameTeacher" class="form-control" placeholder="nombre del profesor" aria-describedby="helpId">
                  <label for="idTeacher" class="form-label">Cédula</label>
+                 
+                 
                  <input type="text" name="id" id="idTeacher" class="form-control" placeholder="numero de cedula" aria-describedby="helpId">
-                 <label for="addressTeacher" class="form-label">Dirección</label>
+                 <div class="mb-3">
+                  <label for="carrerTeacher" class="form-label">Carrera</label>
+                  <br>
+                  <select name="carrerTeacher" id="carrerTeacher">
+                    <option value="turismo">Turismo</option>
+                    <option value="marketing">Marketing</option>
+                    <option value="software">sowtware</option>   
+                   </select>
+                 </div>
+                 
                  <input type="text" name="address" id="addressTeacher" class="form-control" placeholder="direccion de domicillio" aria-describedby="helpId">
                  <label for="titleTeacher" class="form-label">Titulo</label>
-                 <input type="text" name="title" id="regititleTeacher" class="form-control" placeholder="titulo" aria-describedby="helpId">
+                 <input type="text" name="title" id="titleTeacher" class="form-control" placeholder="titulo" aria-describedby="helpId">
                  <label for="asignatureTeacher" class="form-label">Asignatura</label>
-                 <input type="text" name="asignature" id="asignatureTeacher" class="form-control" placeholder="nombre de la asignature a dar" aria-describedby="helpId">
+                 <br>
+                  <select name="asignatureTeacher" id="asignatureTeacher">
+                    <option value="Interfaces">Interfaces</option>
+                    <option value="Programacion">Programacion</option>
+                    <option value="Metodologias">Metodologias</option>   
+                   </select>
+                 </div>
                  
 
                 </div>
             </div>
             <div class="card-footer text-muted">
-                <button class="btn btn-primary">Agregar</button>
+                <button class="btn btn-primary"onclick="addTeacher()">Agregar</button>
             </div>
         
         </div>
+        <hr>
+        <div class="card">
+          <div class="card-header">
+            <center> <h3>CURSOS</h3> 
+          </div>
+          <hr>
+          <div class="card-body">
+             <div class="mb-3">
+               <label for="areaCourse" class="form-label">Area</label>
+               <input type="text" name="area" id="areaCourse" class="form-control" placeholder="seleccione su area" aria-describedby="helpId">
+               <label for="nameCourse" class="form-label">Name</label>
+               <input type="text" name="name" id="nameCourse" class="form-control" placeholder="numero de cedula" aria-describedby="helpId">
+               
+               
+              </div>
+          </div>
+          <div class="card-footer text-muted">
+              <button class="btn btn-primary"onclick="addCourse()">Agregar</button>
+          </div>
+      
+      </div>
     </div>
     <br>
   </main>
