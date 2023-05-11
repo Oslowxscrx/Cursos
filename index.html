@@ -62,7 +62,11 @@
                  <div class="mb-3">
                   <label for="carrerTeacher" class="form-label">Carrera</label>
                   <br>
-                  <select name="carrerTeacher" id="carrerTeacher">
+                  <div class="mb-3">
+                    <label for="" class="form-label">City</label>
+                   
+                  </div>
+                  <select class="form-select form-select-sm" name="carrerTeacher" id="carrerTeacher">
                     <option value="turismo">Turismo</option>
                     <option value="marketing">Marketing</option>
                     <option value="software">sowtware</option>   
@@ -74,42 +78,42 @@
                  <input type="text" name="title" id="titleTeacher" class="form-control" placeholder="titulo" aria-describedby="helpId">
                  <label for="asignatureTeacher" class="form-label">Asignatura</label>
                  <br>
-                  <select name="asignatureTeacher" id="asignatureTeacher">
+                  <select class="form-select form-select-sm" name="asignatureTeacher" id="asignatureTeacher">
                     <option value="Interfaces">Interfaces</option>
                     <option value="Programacion">Programacion</option>
                     <option value="Metodologias">Metodologias</option>   
                    </select>
                  </div>
-                 
-
                 </div>
-            </div>
-            <div class="card-footer text-muted">
-                <button class="btn btn-primary"onclick="addTeacher()">Agregar</button>
-            </div>
-        
-        </div>
-        <hr>
-        <div class="card">
-          <div class="card-header">
-            <center> <h3>CURSOS</h3> 
-          </div>
-          <hr>
-          <div class="card-body">
-             <div class="mb-3">
-               <label for="areaCourse" class="form-label">Area</label>
-               <input type="text" name="area" id="areaCourse" class="form-control" placeholder="seleccione su area" aria-describedby="helpId">
-               <label for="nameCourse" class="form-label">Name</label>
-               <input type="text" name="name" id="nameCourse" class="form-control" placeholder="numero de cedula" aria-describedby="helpId">
-               
-               
+                <div class="card-footer text-muted">
+                  <button class="btn btn-primary"onclick="addTeacher()">Agregar</button>
               </div>
+            </div>
+            
+            <hr>
+            <div class="card">
+              <div class="card-header">
+                <center> <h3>CURSOS</h3> 
+              </div>
+              <hr>
+              <div class="card-body">
+                 <div class="mb-3">
+                   <label for="areaCourse" class="form-label">Area</label>
+                   <input type="text" name="area" id="areaCourse" class="form-control" placeholder="seleccione su area" aria-describedby="helpId">
+                   <label for="nameCourse" class="form-label">Name</label>
+                   <input type="text" name="name" id="nameCourse" class="form-control" placeholder="numero de cedula" aria-describedby="helpId">
+                   
+                   
+                  </div>
+              </div>
+              <div class="card-footer text-muted">
+                  <button class="btn btn-primary"onclick="addCourse()">Agregar</button>
+              </div>
+          
           </div>
-          <div class="card-footer text-muted">
-              <button class="btn btn-primary"onclick="addCourse()">Agregar</button>
-          </div>
+        </div>
       
-      </div>
+       
     </div>
     <br>
   </main>
