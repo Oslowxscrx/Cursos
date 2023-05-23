@@ -59,8 +59,8 @@ function addActivity() {
 }
 function addgradeBook() {
     let currentGradeBook = {
-        course: readHtml("coursegrd"),
-        activity: readHtml("activitygrd"),
+        course: readHtml("courseGrade"),
+        activity: readHtml("activityGrade"),
         peso: parseInt(readHtml("weigthgrd")),
         gradeMax: parseInt(readHtml("maxnotagrd"))
     };
