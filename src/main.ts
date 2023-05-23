@@ -1,3 +1,4 @@
+console.log("OSCAR NOGALES")
 import{Students} from "./entities/students"
 import{Teachers} from "./entities/teacher"
 import {Course} from "./entities/course";

@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+console.log("OSCAR NOGALES");
 let students = [];
 let teachers = [];
 let courses = [];
