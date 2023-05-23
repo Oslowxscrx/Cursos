@@ -1,5 +1,4 @@
 
 export interface Course{
-    area: string;
-    name: string;
+    courseName: string
 }

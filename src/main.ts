@@ -15,9 +15,9 @@ enum Carrera {
     software = "Software",
 }
 enum  Courses{
-   typescript = "Typescript",
-   php = "PHP",
-   angular = "Angular",
+   interfaces = "Interfaces",
+   programacion = "Programacion",
+   metodologias = "Metodologias"
 }
 function addStudent(){
  let currentStudent: Students = {
@@ -28,30 +28,25 @@ function addStudent(){
     level: readHtml("levelStudent"),
  }
  students.push(currentStudent);
- console.log(students);
  console.table(students);
 }
 function addTeacher(){
     let currentTeacher: Teachers = {
        name: readHtml("nameTeacher"),
        id: parseInt( readHtml("idTeacher")),
-       address: readHtml("addressTeacher"),
-       title:readHtml("titleTeacher"),
-       asignature: readHtml("asignatureTeacher") as "Interfaces" | "Programacion" | "Metodologias",
        carrer: readHtml("carrerTeacher"),
     }
     teachers.push(currentTeacher);
-    console.log(teachers);
     console.table(teachers);
    }
    function addCourse(){
     let currentCourse: Course = {
-       area: readHtml("areaCourse"),
-       name:  readHtml("nameCourse"),
+      courseName: readHtml("asignatureTeacher") as "Interfaces" | "Programacion" | "Metodologias",
     }
     courses.push(currentCourse);
-    console.log(courses);
     console.table(courses);
+
+    initSelect()
    }
 
    
@@ -65,6 +60,8 @@ function addActivity() {
    }
    activities.push(currentActivity);
    console.table(activities);
+
+   initSelect()
 }
 
 function addgradeBook(){
@@ -78,13 +75,33 @@ function addgradeBook(){
    console.table(gradesbooks);
 }
 
-function getOptions():void{
-   let currentcourseone = document.getElementById("coursegrd") as HTMLSelectElement;
-   document.querySelectorAll("#coursegrd option").forEach(option => option.remove);
+function initSelect():void{
+ 
 
-   let coursevar = Object.values(courses);
-   coursevar.forEach(element => {
-      let option = document.createElement("option");
-      option.value = element.name;
-   });
+   let gradebookActivity =  document.getElementById("activityGrade") as HTMLSelectElement;
+
+    document.querySelectorAll("#activityGrade option").forEach(option => option.remove());
+
+    
+    activities.forEach(
+        (activity) => {
+            let option = document.createElement("option");
+            option.value = activity.name;
+            option.text = activity.name;
+            gradebookActivity.add(option);
+        }
+    );
+    let gradebookCourse =  document.getElementById("courseGrade") as HTMLSelectElement;
+
+    document.querySelectorAll("#courseGrade option").forEach(option => option.remove());
+
+    
+    courses.forEach(
+        (course) => {
+            let option = document.createElement("option");
+            option.value = course.courseName;
+            option.text = course.courseName;
+            gradebookCourse.add(option);
+        }
+    );
 }
