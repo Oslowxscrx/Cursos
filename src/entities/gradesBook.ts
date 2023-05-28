@@ -1,6 +1,6 @@
 export interface GradesBook{
     course:string;
     activity:string;
-    peso:number;
+    peso:string;
     gradeMax:number;
 }

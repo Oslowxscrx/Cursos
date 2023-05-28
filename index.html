@@ -156,6 +156,69 @@
       
        
     </div>
+    <hr>
+    <div class="card">
+      <div class="card-header">
+        <h3>ASIGNACION</h3>
+      </div>
+      <hr>
+      <div class="card-body">
+        <div class="mb-3">
+          <label for="assignmentStudent" class="form-label">Estudiantes</label>
+          <select class="form-select form-select-sm" name="assignmentStudent" id="assignmentStudent">
+        </div>
+        <div class="mb-3">
+          <label for="" class="form-label">Libro de Configuración:</label>
+          <select class="form-select form-select-sm" name="" id=""></select>
+        </div>
+        <div class="mb-3">
+          <label for="asignmentGradebooksetup" class="form-label">Libro de Configuración:</label>
+          <select class="form-select form-select-sm" name="asignmentGradebooksetup" id="asignmentGradebooksetup"></select>
+        </div>
+        <div class="mb-3">
+          <label for="asignmentGrade" class="form-label">calificacion</label>
+          <input type="number" name="asignmentGrade" id="asignmentGrade" class="form-control" placeholder="0-100"
+            aria-describedby="helpId">
+        </div>
+        </div>
+        
+
+        <div class="card-footer text-muted">
+          <button class="btn btn-primary" onclick="addAssigment()">Agregar</button>
+        </div>
+      </div>
+    
+     
+  </div>
+    
+    <br>
+    <div class="container">
+        
+    
+    <hr>
+    <h2>Reporte</h2>
+    <br>
+    <div>
+        <button class="btn btn-primary" onclick="generateReport()">Generar reporte</button>
+        
+    </div>
+    <br>
+    <table id="report" class="table table-striped" style="border-radius: 2px solid rgb(107, 107, 107)">
+        <thead >
+            <tr>
+                <th>Curso</th>
+                <th>Nombre</th>
+                <th>Valor</th>
+                <th>Actividad</th>
+                <th>Valor</th>
+                <th>calificacion</th>
+            </tr>
+        </thead>
+        <tbody>
+            <td></td>
+        </tbody>
+    </table>
+    </div>
     <br>
   </main>
   <footer>
